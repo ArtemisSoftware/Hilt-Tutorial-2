@@ -14,11 +14,16 @@ class MainActivity : AppCompatActivity() {
     @Named("String1")
     lateinit var testString: String
 
+    @Inject
+    @Named("String2")
+    lateinit var testString2: String
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         Log.d("MainActivity", "Test String from MainActivity: $testString")
+        Log.d("MainActivity", "Another Test String from MainActivity: $testString2")
 
     }
 }
