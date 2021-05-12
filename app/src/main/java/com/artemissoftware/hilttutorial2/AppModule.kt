@@ -13,5 +13,6 @@ object AppModule {
 
     @Singleton
     @Provides
-    fun provideTestString() = "This is a string we will inject"
+    @Named("String1")
+    fun provideTestString1() = "This is a string we will inject"
 }
